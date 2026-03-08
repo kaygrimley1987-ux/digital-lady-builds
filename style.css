@@ -3,64 +3,60 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* White background */
     color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 }
 
 /* Navbar */
 .navbar {
-    background: #333;
-    color: #fff;
-    padding-top: 10px;
-    min-height: 70px;
-    border-bottom: #77b3d4 3px solid;
+    background: #ffffff;
+    padding: 15px 0;
+    border-bottom: 2px solid #ff69b4; /* Hot Pink Border */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
-    float: right;
     list-style: none;
-    margin-top: 20px;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #ff69b4; /* Pink text */
     text-decoration: none;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 16px;
 }
 
 /* Hero Section */
 .hero {
-    background: #77b3d4;
-    color: #fff;
-    height: 400px;
+    background: #fff0f5; /* Lavender Blush (very light pink) */
+    color: #333;
+    padding: 100px 20px;
     text-align: center;
-    padding-top: 100px;
 }
 
 .hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
+    color: #ff69b4; /* Hot Pink */
+    font-size: 45px;
 }
 
 .btn {
-    display: inline-block;
-    background: #333;
+    background: #ff69b4;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    display: inline-block;
     margin-top: 20px;
 }
