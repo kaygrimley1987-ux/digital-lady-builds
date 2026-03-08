@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Digital Lady Builds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+        :root { --pink: #ff2d75; --slate: #0f172a; --pearl: #f8fafc; --border: rgba(15, 23, 42, 0.08); --white: #ffffff; }
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+        body { background: var(--pearl); color: var(--slate); font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding-top: 80px; }
+        
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; padding: 20px 8%; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+        .logo { font-weight: 800; font-size: 1.1rem; text-decoration: none; color: var(--slate); text-transform: uppercase; }
+        .logo span { color: var(--pink); font-family: 'Cormorant Garamond', serif; text-transform: none; font-style: italic; font-weight: 500; font-size: 1.3rem; }
+        .nav-links a { color: var(--slate); text-decoration: none; font-size: 0.7rem; font-weight: 700; margin-left: 30px; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.7; }
+        .nav-links a:hover { opacity: 1; color: var(--pink); }
+
+        .container { padding: 60px 8%; max-width: 1200px; margin: 0 auto; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 40px; text-align: center; font-weight: 500; }
+        h1 span { color: var(--pink); font-style: italic; }
+
+        /* Comparison Section */
+        .advantage-section { background: var(--white); padding: 60px; border-radius: 12px; border: 1px solid var(--border); margin-bottom: 60px; }
+        .advantage-section h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-top: 0; }
+        .advantage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
+        .adv-item h3 { color: var(--pink); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
+        .adv-item p { font-size: 1rem; line-height: 1.7; color: #475569; }
+
+        /* Pricing Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 100px; }
+        .price-card { background: var(--white); padding: 50px; border-radius: 12px; border: 1px solid var(--border); }
+        .price-card:hover { border-color: var(--pink); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        .price-card h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; margin: 0; }
+        .price { display: block; margin: 20px 0; font-weight: 800; font-size: 1.4rem; color: var(--pink); }
+        ul { padding: 0; list-style: none; margin: 30px 0; border-top: 1px solid var(--border); }
+        li { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: #475569; }
+
+        footer { padding: 60px 8%; background: var(--white); border-top: 1px solid var(--border); text-align: center; font-size: 0.7rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 2px; }
+        
+        @media (max-width: 850px) { .advantage-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">DIGITAL LADY <span>Builds</span></a>
+        <div class="nav-links">
+            <a href="work.html">Capabilities</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Bespoke <span>Investment.</span></h1>
+
+        <section class="advantage-section">
+            <h2>The Hand-Coded <span>Difference.</span></h2>
+            <div class="advantage-grid">
+                <div class="adv-item">
+                    <h3>Raw Performance</h3>
+                    <p>Drag-and-drop builders (Wix/WordPress) carry 80% "bloat" code you don't need. My hand-coded sites are lightweight, achieving <strong>100/100 Google Speed Scores</strong> that templates simply cannot match.</p>
+                </div>
+                <div class="adv-item">
+                    <h3>Clean SEO</h3>
+                    <p>Google rewards clean architecture. By writing every line of code, I ensure your business is indexed perfectly, giving you a <strong>natural advantage</strong> in local search rankings over template-based competitors.</p>
+                </div>
+                <div class="adv-item">
+                    <h3>Bulletproof Security</h3>
+                    <p>Template sites are major targets for hackers due to outdated plugins. A hand-coded site has <strong>zero plugin vulnerabilities</strong>, keeping your business and client data fundamentally secure.</p>
+                </div>
+                <div class="adv-item">
+                    <h3>Total Scalability</h3>
+                    <p>You aren't locked into a platform's limits. Your site is <strong>100% owned by you</strong>, meaning we can add any custom feature or visual detail as your business grows, without compromise.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid">
+            <div class="price-card">
+                <h2>The Boutique</h2>
+                <span class="price">From £1,250</span>
+                <ul><li>5-Page Custom Architecture</li><li>Fully Hand-Coded Core</li><li>Technical SEO Foundation</li><li>Mobile-First Performance</li></ul>
+            </div>
+            <div class="price-card" style="border-top: 4px solid var(--pink);">
+                <h2>The Professional</h2>
+                <span class="price">From £1,850</span>
+                <ul><li>Expanded Project Portfolios</li><li>Advanced SEO Dominance</li><li>Premium Conversion Strategy</li><li>Priority Performance Tuning</li></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2026 Digital Lady Builds • Manchester</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capabilities | Digital Lady Builds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <style>
+        :root { --pink: #ff2d75; --slate: #0f172a; --border: rgba(15, 23, 42, 0.08); --white: #ffffff; }
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+        body { background: #ffffff; color: var(--slate); font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding-top: 80px; }
+        
+        nav { display: flex; justify-content: space-between; padding: 20px 8%; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+        .logo { font-weight: 800; font-size: 1.1rem; text-decoration: none; color: var(--slate); letter-spacing: -0.5px; text-transform: uppercase; }
+        .logo span { color: var(--pink); font-family: 'Cormorant Garamond', serif; text-transform: none; font-style: italic; font-weight: 500; font-size: 1.3rem; }
+        .nav-links a { color: var(--slate); text-decoration: none; font-size: 0.7rem; font-weight: 700; margin-left: 30px; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.7; }
+        .nav-links a:hover { opacity: 1; color: var(--pink); }
+
+        .container { padding: 80px 8% 120px 8%; max-width: 1200px; margin: 0 auto; }
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 4rem; margin-bottom: 60px; font-weight: 500; }
+        h1 span { color: var(--pink); font-style: italic; }
+        
+        .capability-row { display: grid; grid-template-columns: 250px 1fr; gap: 40px; padding: 60px 0; border-top: 1px solid var(--border); }
+        .cap-label { color: var(--pink); font-weight: 800; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; }
+        .cap-content h2 { margin: 0 0 15px 0; font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 500; }
+        .cap-content p { color: #475569; line-height: 1.8; max-width: 700px; font-size: 1.05rem; }
+
+        footer { padding: 60px 8%; border-top: 1px solid var(--border); text-align: center; font-size: 0.7rem; color: #94a3b8; letter-spacing: 2px; text-transform: uppercase; }
+        @media (max-width: 900px) { .capability-row { grid-template-columns: 1fr; gap: 10px; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">DIGITAL LADY <span>Builds</span></a>
+        <div class="nav-links">
+            <a href="work.html">Capabilities</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Technical <span>Specialisms.</span></h1>
+        
+        <div class="capability-row">
+            <div class="cap-label">Engineering</div>
+            <div class="cap-content"><h2>Bespoke Hand-Coding</h2><p>I build websites line-by-line using clean HTML5, CSS3, and JavaScript. By removing the weight of page-builders, I deliver sites that are secure, lightning-fast, and easy for Google to crawl.</p></div>
+        </div>
+
+        <div class="capability-row">
+            <div class="cap-label">Visibility</div>
+            <div class="cap-content"><h2>Local SEO Strategy</h2><p>For UK trades, local visibility is everything. I integrate search engine optimization into the very foundation of your code, helping you appear exactly where your local customers are searching.</p></div>
+        </div>
+
+        <div class="capability-row">
+            <div class="cap-label">Optimization</div>
+            <div class="cap-content"><h2>Performance First</h2><p>I target 100/100 Core Web Vitals. Your project galleries will load instantly, ensuring a premium experience for potential clients, even on mobile devices at a job site.</p></div>
+        </div>
+    </div>
+
+    <footer>© 2026 Digital Lady Builds • Manchester</footer>
+</body>
+</html>
