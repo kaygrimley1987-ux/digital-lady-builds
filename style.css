@@ -1,21 +1,25 @@
 /* General Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Cleaner, more modern font */
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Navbar */
+/* Navbar - Clean White with Pink Accents */
 .navbar {
     background: #ffffff;
-    padding: 15px 0;
-    border-bottom: 2px solid #ff69b4; /* Hot Pink Border */
+    padding: 10px 0;
+    border-bottom: 2px solid #ff69b4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .container {
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -28,35 +32,83 @@ body {
 }
 
 .nav-links li {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .nav-links a {
-    color: #ff69b4; /* Pink text */
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-/* Hero Section */
+.nav-links a:hover {
+    color: #ff69b4; /* Pink on hover */
+}
+
+/* Hero Section - Soft Pink Gradient */
 .hero {
-    background: #fff0f5; /* Lavender Blush (very light pink) */
-    color: #333;
-    padding: 100px 20px;
+    background: linear-gradient(135deg, #fff0f5 0%, #ffffff 100%);
+    padding: 120px 20px;
     text-align: center;
 }
 
 .hero h1 {
-    color: #ff69b4; /* Hot Pink */
-    font-size: 45px;
+    color: #ff69b4;
+    font-size: 55px;
+    margin-bottom: 10px;
 }
 
+.hero p {
+    font-size: 20px;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Button Styling */
 .btn {
     background: #ff69b4;
     color: #fff;
-    padding: 12px 25px;
+    padding: 15px 35px;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 50px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: 0.4s;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+
+.btn:hover {
+    background: #e0559b;
+    transform: translateY(-3px);
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Grid for Services/Features */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #fff0f5;
 }
