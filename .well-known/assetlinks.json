@@ -1,0 +1,13 @@
+[{
+  "relation": [
+    "delegate_permission/common.handle_all_urls",
+    "delegate_permission/common.get_login_creds"
+  ],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "app.netlify.glistening_puffpuff_c41c91.v2.twa",
+    "sha256_cert_fingerprints": [
+      "4C:04:7E:4B:1A:CB:20:22:D8:2C:E6:5A:A8:D6:F7:6A:DB:1A:91:3C:24:9B:C3:1F:89:74:30:C2:53:A1:1A:F9"
+    ]
+  }
+}]
